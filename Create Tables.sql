@@ -7,6 +7,9 @@ CREATE DATABASE DevariaCandies;
 
 BEGIN TRANSACTION
 
+/*
+    	criaça da tabela CLIENTE
+*/
 CREATE TABLE Cliente
 (
 	Codigo int Identity (1,1) NOT NULL,
@@ -114,6 +117,9 @@ CREATE TABLE Pedido_Compra
 	CONSTRAINT FK_CodigoDistribuidor FOREIGN KEY (Codigo_Distribuidor) REFERENCES Distribuidor(Codigo)
 )
 
+/*
+    	criaça da tabela ITEM DE PEDIDO COMPRA
+*/
 CREATE TABLE Item_Pedido_Compra
 (
 	Codigo INT IDENTITY(1,1) NOT NULL,
